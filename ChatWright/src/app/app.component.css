@@ -1,0 +1,47 @@
+/* .body{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  position: static;
+}
+
+.main{
+   display: block;
+
+} */
+/* Apply to whole page to prevent horizontal scroll */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* kill horizontal scrollbar */
+  height: 100%;
+}
+
+/* Body wrapper */
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar always at top */
+.nav {
+  position: fixed;     /* stick to top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;       /* stay above content */
+}
+
+/* Push main content below navbar */
+.main {
+  display: block;
+  margin-top: 80px;    /* same as navbar height */
+  flex: 1;
+}

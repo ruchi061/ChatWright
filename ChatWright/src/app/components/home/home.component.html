@@ -1,0 +1,75 @@
+<div class="home-container">
+  <!-- Background Blur -->
+  <div class="background-overlay"></div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Build Your Own AI</h1>
+    <p class="subtitle">Create, Test, Deploy.</p>
+    <p class="description">
+      Use it on your own website, share it with your <i class="fas fa-teamspeak"></i>,
+      or publish it to a global marketplace of makers and minds.
+      <strong>No code required.</strong>
+    </p>
+    <button class="create-btn">+ Create</button>
+  </div>
+
+  <!-- Logo on Right Side -->
+  <div
+    class="logo-container"
+    #logoRef
+    [ngStyle]="logoVars"
+  >
+    <img src="assets/images/chatwright.png" alt="ChatWright Logo" class="logo" />
+    <!-- Two black circles on logo -->
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="container">
+    <div class="features-header">
+      <h2 class="features-title">How It Works</h2>
+      <p class="features-subtitle">Our step-by-step workflow makes it easy to create your perfect chatbot</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <img src="assets/images/dataupload.svg" alt="Data Upload Icon">
+        </div>
+        <h3 class="feature-card-title">1. Data Upload</h3>
+        <p class="feature-card-description">You can upload anything from excel documents, PDFS, videos, photos, and text to train your AI model</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <img src="assets/images/model_generation.svg" alt="Model Generation Icon">
+        </div>
+        <h3 class="feature-card-title">2. Model Generation</h3>
+        <p class="feature-card-description">AI algorithms process and train a chatbot model using the data you uploaded</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <img src="assets/images/design.svg" alt="Design Icon">
+        </div>
+        <h3 class="feature-card-title">3. Design</h3>
+        <p class="feature-card-description">Design your chatbot interface with our drag-and-drop builder</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon-wrapper">
+          <img src="assets/images/fi-rs-gem.svg" alt="Finalize Icon">
+        </div>
+        <h3 class="feature-card-title">4. Finalize</h3>
+        <p class="feature-card-description">Test, modify, and save. Deploy to your website, keep for personal use, or publish on the global marketplace. The world is your oyster.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cta-section">
+  <h2>Ready to Cook Up Your Chatbot?</h2>
+  <p>Start building your custom AI chatbot today with our easy-to-use platform</p>
+  <button class="cta-btn">
+    <img src="assets/images/fi-rs-magic-wand.svg" alt="Cooking Icon" class="btn-icon" />
+    Start Cooking
+  </button>
+</div>

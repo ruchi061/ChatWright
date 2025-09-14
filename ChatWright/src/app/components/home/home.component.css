@@ -1,0 +1,380 @@
+/* ------------ Home Section ------------ */
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-overlay {
+  left: -100px;
+  position: absolute;
+  inset: 0;
+  background: url('/assets/images/background.png') no-repeat center center / cover;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.content {
+  width: 50%;
+  float: left;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 90px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.content .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.content .description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.create-btn {
+  padding: 10px 25px;
+  background: #fff;
+  color: #000;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.create-btn:hover {
+  background: #4fa3ff;
+  color: #fff;
+}
+
+.logo-container {
+  position: absolute;
+  right: -15%;
+  top: 100%;
+  transform: translateY(-50%) scale(0.5);
+  transform-origin: top right;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  border-radius: 50%;
+  transform: translate(var(--dx, 0px), var(--dy, 0px));
+  will-change: transform;
+}
+
+.circle1 { top: 38%; left: 19%; }
+.circle2 { top: 38%; left: 36%; }
+
+
+/* CSS from section:features */
+#features .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top:50px;
+}
+
+.features-header {
+  text-align: center;
+  max-width: 631px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.features-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.47;
+  color: #ffffff;
+  margin: 0;
+}
+
+.features-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.47;
+  color:#cacaca;
+  margin: 0;
+}
+
+.features-grid {
+ padding-right:20px;
+  padding-left:20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  width: 100%;
+}
+
+.feature-card {
+  /* background-color: #ffffff; */
+  background: #00406C;
+
+  border: 1px solid  #00406C;
+  border-radius: 20px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.feature-icon-wrapper {
+  width: 85px;
+  height: 85px;
+  background-color: #ffffff;
+;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feature-icon-wrapper img {
+  width: 32px;
+  height: 32px;
+}
+
+.feature-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.47;
+  color:#fefefe;
+  margin: 0;
+}
+
+.feature-card-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.47;
+  color:  #ffff;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-title {
+    font-size: 48px;
+  }
+  .features-subtitle {
+    font-size: 18px;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cta-section {
+
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 12px;
+  margin: 100px auto;
+  max-width: 700px;
+  color: #fff;
+background: linear-gradient(97.83deg, #0079CE 2.37%, #6E00A1 100%);
+
+
+}
+
+
+.cta-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cta-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #140084;
+
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #3b33c4;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+/* ✅ Responsive adjustments for Home Section */
+.content {
+  width: 50%;
+  padding: 90px;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    width: 70%;
+    padding: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .logo-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: scale(0.7);
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .content .description {
+    font-size: 0.95rem;
+  }
+
+  .create-btn {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+  }
+
+  .logo-container {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 20px 15px;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+  }
+
+  .content .subtitle {
+    font-size: 1rem;
+  }
+
+  .content .description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .logo-container {
+    transform: scale(0.5);
+    margin-top: 20px;
+  }
+}
+
+/* ✅ Features Section Responsive Fix */
+@media (max-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-title {
+    font-size: 36px;
+  }
+
+  .features-subtitle {
+    font-size: 16px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ✅ CTA Section Responsive Fix */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 40px 20px;
+    margin: 60px auto;
+  }
+
+  .cta-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-section p {
+    font-size: 0.9rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

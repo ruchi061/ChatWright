@@ -1,0 +1,23 @@
+<nav class="navbar">
+  <!-- Logo -->
+  <div class="logo">
+    <img src="assets/images/chatwright.png" alt="ChatWright" />
+    <span>ChatWright</span>
+  </div>
+
+  <!-- Hamburger (visible on small screens) -->
+  <div id="hamburger" class="hamburger" (click)="toggleMenu()">
+    ☰
+  </div>
+
+  <!-- Nav Links -->
+  <ul id="navLinks" class="nav-links" [class.show]="isMenuOpen">
+    <li>
+      <a routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    </li>
+    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+    <li><a routerLink="/technologies" routerLinkActive="active">Technologies</a></li>
+    <li><a routerLink="/about-us" routerLinkActive="active">About Us</a></li>
+    <li><a routerLink="/contact-us" routerLinkActive="active">Contact Us</a></li>
+  </ul>
+</nav>
